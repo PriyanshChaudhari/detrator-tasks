@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Detrator-tasks
 
-## Getting Started
+This project is built using Next.js 15 and Material-UI (MUI). The project includes a responsive layout with a navbar, a main container, and a secondary container.
 
-First, run the development server:
+## Table of Contents
 
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [File Structure](#file-structure)
+- [Components](#components)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/PriyanshChaudhari/detrator-tasks.git
+   cd detrator-tasks
+   ```
+
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+## Running the Project
+
+To run the project locally, use the following command:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to `http://localhost:3000` to see the application running.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## File Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project structure is as follows:
 
-## Learn More
+```
+├── detrator-tasks/ 
+│ ├── .gitignore
+│ ├── jsconfig.json
+│ ├── next.config.mjs
+│ ├── README.md
+│ ├── package-lock.json
+│ ├── package.json
+│ └── app/ 
+│   ├── layout.js
+│   ├── page.js
+│   ├── global.css
+│   ├── favicon.ico
+│   └── components/
+│    └── Navbar.js
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Navbar.js**: This component contains the navigation bar with a brand name, search bar, and user account information.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Pages
 
-## Deploy on Vercel
+- **page.js**: This is the home page of the application. It includes the `Navbar` component and the main and secondary containers.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Styles
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **globals.css**: This file contains global CSS styles for the project.
+
+## Components
+
+### Navbar
+
+The `Navbar` component includes:
+- A brand name (`Brand Name`)
+- A search bar with a search icon
+- A user account icon and user name
+
+### Main Container
+
+The main container is displayed in the center and takes up 3/7 of the width on larger screens. On smaller screens, it takes up the full width.
+
+### Secondary Container
+
+The secondary container is displayed to the right of the main container and takes up 2/7 of the width on larger screens. It is hidden on smaller screens.
